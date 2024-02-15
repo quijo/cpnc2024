@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+   --primaryyellow:#f5c71a;
+   --secondaryyellow:#fbec5d;
+ 
+
+   --primaryblue:#0080ff;
+   --secondaryblue:#3333ff;
+
+   --btn-pri-background: #0080ff;
+   --btn-pri-border:2rem;
+   --btn-pri-padding:0.5rem 2rem;
+   --btn-pri-color:white;
+}
+
+.primary-btn{
+   background-color: var(--btn-pri-background);
+   border-radius: var(--btn-pri-border);
+   padding:var(--btn-pri-padding);
+   color:var(--btn-pri-color);
+   text-transform: uppercase;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    scroll-behavior: smooth;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--primaryyellow);
+    padding: 1rem 5rem;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+header .logo{
+    font-size: 1.8rem;
+    color: var(--primaryblue);
+    font-weight: 600;
+}
+
+header .menu-btn{
+    padding:0.5rem 0.7rem;
+    background-color: var(--btn-pri-background);
+    border:none;
+    color:white;
+    border-radius: .2rem;
+    display: none;
+
+}
+header nav .primary-btn:hover{
+background-color: var(--secondaryblue);
+}
+header nav .slide-left{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav ul li a{
+    color:var(--primaryblue);
+    text-transform: uppercase; 
+    position: relative;
+}
+
+header nav ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Set the thickness of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: #0077cc; /* Set the color of the underline */
+    transition: width 0.3s; /* Add transition for a smooth animation */
+}
+header nav ul li a:hover::before{
+  color:var(--secondaryblue);
+  width: 100%; /* Expand the underline to full width on hover */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+}
+
+nav .btn:hover{
+    background-color: var(--secondaryblue);
+
+}
+
+.menu-active{
+    left:-100%;
+}
+.active{
+    left:-100%;
+}
+
+.home{
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+    padding-top: 4rem;
+    height: 100vh;
+    
+ }
+ .home .particles{
+    width: 100%;
+   position: absolute;
+   background-color: var(--secondaryyellow);
+   height: 100vh;
+ 
+ }
+ .home img{
+  z-index: 2;
+
+width: 100px;
+  flex: 1.5;
+ 
+ }
+ .home .text{
+    z-index: 2; 
+    flex: 1.7;
+ 
+ }
+ .home .text h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+    color:var(--primaryblue)
+ }
+ .home .text p{
+    color: var(--secondaryblue);
+    font-size: 1.5rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+.parallax1{
+    display: flex;
+    justify-content: space-between;
+
+    height: 300px;
+    padding:5rem 5rem;
+    color:var(--secondaryblue);
+    gap:1rem;
+   
+    width:100%;
+    top:3.5rem;
+    background-image: url('/images/about1.jpg');
+    /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+.parallax2{
+    display: flex;
+    justify-content: space-between;
+
+    height: 300px;
+    padding:5rem 5rem;
+    color:var(--secondaryblue);
+    gap:1rem;
+   
+    width:100%;
+    top:3.5rem;
+    background-image: url('/images/parallax2.jpg');
+    /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+
+.about{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:2rem;
+  
+    
+}
+
+
+.about .left{
+    padding:2rem;
+    /* background-color: var(--primaryblue); */
+    flex: 1;
+    text-align: center;
+    border:solid var(--primaryyellow) .7rem ;
+ }
+
+ .about .right{
+    padding:2rem;
+    /* background-color: var(--primaryblue); */
+    flex: 1;
+ }
+ .about .right h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+ .about .right p{
+    font-size: 1.2rem;
+ }
+ .about .left img{
+    width: 98%;
+
+ }
+
+ .article1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 100vh;
+    gap:1rem;
+ }
+ .article1 .left{
+flex: 1;
+ }
+ .article1 .left h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+ .article1 .left p{
+    font-size: 1.2rem;
+ }
+ .article1 .right{
+    padding:2rem;
+    text-align: center;
+    border:solid var(--primaryblue) .7rem ;
+flex: 1;
+ }
+ .article1 .right img{
+    text-align: center;
+    width: 98%;
+ }
+
+ .article2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    gap:1rem;
+ }
+ .article2 .left, .right{
+    flex: 1;
+ }
+
+ .article2 .right h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+ .article2 .right p{
+    font-size: 1.2rem;
+ }
+ .article2 .left img{
+    text-align: center;
+    width: 98%;
+ }
+ .article2 .left{
+    padding:2rem;
+    /* background-color: var(--primaryblue); */
+    flex: 1;
+    text-align: center;
+    border:solid var(--primaryyellow) .7rem ;
+ }
+
+
+ .article3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+ }
+ .article3 .left, .right{
+    flex: 1;
+ }
+ .article3 .left h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+ .article3 .left p{
+    font-size: 1.2rem;
+ }
+
+ .admission{
+    height: 100vh;
+ }
+ .article3 .right{
+    padding:2rem;
+    /* background-color: var(--primaryblue); */
+    flex: 1;
+    text-align: center;
+    border:solid var(--primaryblue) .7rem ;
+ }
+ .article3 .right img{
+    text-align: center;
+    width: 98%;
+ }
+
+
+
+@media(max-width:768px){
+  header nav{
+    display: block;
+    position:absolute;
+    background-color: rgba(245, 199, 26, .9);
+   
+    top:0;
+    text-align: center;
+    padding:5rem;
+    left:0;
+    width: 100%;
+    transition: ease-in .2s;
+    height: 100vh;
+
+  }
+  header nav .slide-left{
+    display: block;
+    position: absolute;
+    top:1rem;
+    right: 5rem;
+    padding:0.5rem 0.7rem;
+    background-color: var(--btn-pri-background);
+    border: none;
+    border-radius:0.2rem;
+    color:white;
+    font-size: 1rem;
+}
+  header nav ul{
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap:2rem;
+  }
+  header .menu-btn{
+    display: block;
+  }
+}
+
+
+
