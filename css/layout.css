@@ -181,7 +181,9 @@ width: 100px;
    
     width:100%;
     top:3.5rem;
+
     background-image: url('../images/about1.jpg');
+
     /* Set a specific height */
   min-height: 500px;
 
@@ -203,7 +205,9 @@ width: 100px;
    
     width:100%;
     top:3.5rem;
+
     background-image: url('../images/parallax2.jpg');
+
     /* Set a specific height */
   min-height: 500px;
 
