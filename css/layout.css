@@ -5,11 +5,8 @@
 :root{
    --primaryyellow:#f5c71a;
    --secondaryyellow:#fbec5d;
- 
-
    --primaryblue:#0080ff;
    --secondaryblue:#3333ff;
-
    --btn-pri-background: #0080ff;
    --btn-pri-border:2rem;
    --btn-pri-padding:0.5rem 2rem;
@@ -30,20 +27,23 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight:500;
     font-style: normal;
     scroll-behavior: smooth;
 
-    transition: all .2s ease-in;
    
 }
+main{
 
-section{
-   max-width: 1324px;
-   margin: 0 auto;
+}
+
+.con{
+   width: 100%;
+   background-color: var(--primaryyellow);
+   position: fixed;
+   z-index: 1000;
 }
 header{
     display: flex;
@@ -52,14 +52,15 @@ header{
     background-color:var(--primaryyellow);
     padding: 1rem 5rem;
     width: 100%;
-    z-index: 1000;
-    position: fixed;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 header .logo{
     font-size: 1.8rem;
     color: var(--primaryblue);
     font-weight: 600;
+  
 }
 
 header .menu-btn{
@@ -104,6 +105,12 @@ header nav ul li a:hover::before{
   width: 100%; /* Expand the underline to full width on hover */
 }
 
+section{
+   max-width: 1920px;
+   margin: 0 auto;
+   position: relative;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -130,7 +137,8 @@ nav .btn:hover{
     align-items: center;
     padding-top: 4rem;
     height: 100vh;
-    max-width: 1324px;
+    overflow: hidden;
+
     
  }
  .home .particles{
@@ -138,14 +146,14 @@ nav .btn:hover{
    position: absolute;
    background-color: var(--secondaryyellow);
    height: 100vh;
-   max-width: 1324px;
+  
  
  }
  .home img{
   z-index: 2;
 
-width: 100px;
-  flex: 1.5;
+width: 20%;
+flex: 1;
  
  }
  .home .text{
@@ -181,31 +189,18 @@ width: 100px;
 .parallax1{
     display: flex;
     justify-content: space-between;
-
     height: 300px;
     padding:5rem 5rem;
     color:var(--secondaryblue);
     gap:1rem;
-   
-
-    top:3.5rem;
-
-   
-   background-image: url('../images/about1.jpg');
-   
-   
-   
-
-    /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   
+    background-image: url('../images/about1.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .parallax2{
     display: flex;
     justify-content: space-between;
@@ -248,7 +243,7 @@ width: 100px;
  }
 
  .about .right{
-    padding:2rem;
+    padding:1rem;
     /* background-color: var(--primaryblue); */
     flex: 1;
  }
@@ -271,7 +266,7 @@ width: 100px;
     padding: 0 2rem;
     height: 100vh;
     gap:1rem;
-    max-width: 1324px;
+   
     margin: 0 auto;
  }
  .article1 .left{
@@ -303,6 +298,7 @@ flex: 1;
     height: 100vh;
     padding: 0 2rem;
     gap:1rem;
+ 
  }
  .article2 .left, .right{
     flex: 1;
@@ -334,6 +330,7 @@ flex: 1;
     align-items: center;
     height: 100vh;
     padding: 0 2rem;
+    
  }
  .article3 .left, .right{
     flex: 1;
@@ -348,6 +345,7 @@ flex: 1;
 
  .admission{
     height: 100vh;
+
  }
  .article3 .right{
     padding:2rem;
@@ -365,6 +363,7 @@ flex: 1;
    background-color: var(--primaryblue);
    padding: 2rem 5rem;
    height: 100%;
+  
  }
  .admission  .content .left .excellence span{
    color: var(--primaryyellow);
@@ -395,11 +394,22 @@ flex: 1;
    gap: 2rem;
    flex: 1;
  }
+ .admission .right .online h1{
+   color:white 
+}
+.admission .right .online h1 span{
+ color:var(--primaryyellow)
+}
+
  .admission .title{
    padding:2.5rem 5rem;
    text-align: center;
    color:white;
    font-size: 1.5rem;
+ }
+ .admission .title .fa-user-pen{
+   margin-top: 3rem;
+   font-size: 4rem;
  }
  .admission .title span{
    color: var(--primaryyellow);
@@ -420,6 +430,7 @@ flex: 1;
    justify-content: space-around;
    align-items: center;
    gap:3rem;
+
  }
 
  .admission .left .fa-solid{
@@ -453,6 +464,7 @@ flex: 1;
  .admission .development{
    display: flex;
    gap:1rem;
+
  }
  .admission .development p{
    color:white;
@@ -469,6 +481,7 @@ flex: 1;
    display: flex;
    gap: 1rem;
    color: white;
+  
    
   
  }
@@ -483,10 +496,10 @@ flex: 1;
 }
 .admission .right{
    flex: 0.9;
+   padding-top:5rem;
+   
 }
-.admission .content .right .title{
-   text-align: left;
-}
+
 
 .admission .content .right h1{
    font-size: 2rem;
@@ -495,7 +508,7 @@ flex: 1;
 }
 .admission .content .right h2{
    font-size: 1.5rem;
-   color:white;
+   color:var(--primaryyellow);
    margin-top: 1.5rem;
   
 }
@@ -504,18 +517,17 @@ flex: 1;
    margin-top: 0.5rem;
 }
 
+
 .admission .content .right h2 .fa-square-check{
    margin-right: 1rem;
 }
 
+.admission .content .right p{
+   color: white;
+}
 
 
-
-
-
-
-
- footer{
+footer{
    background-color: gray;
    padding: 1rem 5rem;
    color:white;
@@ -564,7 +576,6 @@ footer .connect a{
     display: block;
     position:absolute;
     background-color: rgba(245, 199, 26, .9);
-   
     top:0;
     text-align: center;
     padding:5rem;
@@ -594,6 +605,92 @@ footer .connect a{
   header .menu-btn{
     display: block;
   }
+
+  .home .text h1{
+   font-size: 2.5rem;
+   transition: ease-in 0.2s;
+  }
+  .home .text p{
+   font-size: 0.9rem;
+   
+  }
+  .about{
+   flex-direction: column-reverse;
+  }
+  .about .left{
+   width: 100%;
+   padding:0.5rem;
+   border:solid 0.5rem var(--primaryyellow);
+   margin-bottom: 5rem;
+  }
+
+  .about .right{
+   padding: 0;
+   margin-bottom: 1rem;
+
+  }
+  .article1, .article2, .article3{
+   max-width: 1920px;
+  }
+ 
+  .article1{
+   flex-direction: column;
+  
+  }
+ 
+  .article1 .right{
+   width: 100%;
+   padding:0.5rem;
+   border:solid 0.5rem var(--primaryyellow);
+ 
+  }
+  
+
+  .article2{
+   flex-direction: column-reverse;
+   margin-top: 15rem;
+  }
+  .article2 .left{
+   
+   width: 100%;
+   padding:0.5rem;
+   border:solid 0.5rem var(--primaryyellow);
+   margin-bottom: 5rem;
+ 
+  }
+
+  .article3{
+   flex-direction: column;
+   margin-bottom: 5rem;
+  }
+.article3 .left{
+   margin-bottom: 1rem;
+}
+.article3 .right{
+   width: 100%;
+   padding:0.5rem;
+   border:solid 0.5rem var(--primaryyellow);
+   margin-bottom: 5rem;
+}
+
+}
+
+@media(max-width:600px){
+   .home{
+      flex-direction: column;
+      padding-bottom: 2rem;
+   }
+   .home img{
+      width: 40%;
+      transition: ease-in .2s;
+      margin-top: 2rem;
+      margin-bottom: 0;
+   }
+   .home .text{
+      text-align: center;
+      padding:3rem;
+   }
+  
 }
 
 
