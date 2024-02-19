@@ -526,6 +526,36 @@ flex: 1;
    color: white;
 }
 
+.admission .content .right .apply-btn{
+   margin-top: 2rem;
+   padding:var(--btn-pri-padding);
+   background-color: var(--btn-pri-background);
+   border:2px solid var(--primaryyellow);
+   color:white;
+   border-radius: 5rem;
+
+}
+.admission .content .right .apply-btn:hover{
+   background-color: var(--primaryyellow);
+   color: var(--primaryblue);
+   transition: ease-in .1s;
+}
+.admission .content .right .contact-btn{
+   margin-top: 2rem;
+   padding:var(--btn-pri-padding);
+   background-color: var(--primaryyellow);
+   border:2px solid var(--primaryyellow);
+   color:var(--primaryblue);
+   border-radius: 5rem;
+
+}
+.admission .content .right .contact-btn:hover{
+
+   background-color:transparent;
+   color: white;
+   transition: ease-in .1s;
+}
+
 
 footer{
    background-color: gray;
@@ -565,6 +595,7 @@ footer .connect a{
    margin-right: 1rem;
    margin-top:1rem;
 }
+
 
 
 
