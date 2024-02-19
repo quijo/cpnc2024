@@ -9,16 +9,22 @@
    --secondaryblue:#3333ff;
    --btn-pri-background: #0080ff;
    --btn-pri-border:2rem;
-   --btn-pri-padding:0.5rem 2rem;
+   --btn-pri-padding:1rem 2rem;
    --btn-pri-color:white;
+
+}
+body{
+   background-color: white;
 }
 
 .primary-btn{
    background-color: var(--btn-pri-background);
    border-radius: var(--btn-pri-border);
-   padding:var(--btn-pri-padding);
+   padding:0.6rem 3rem;
    color:var(--btn-pri-color);
    text-transform: uppercase;
+   z-index: 999;
+
 }
 
 *{
@@ -32,11 +38,11 @@
     font-weight:500;
     font-style: normal;
     scroll-behavior: smooth;
-
-   
 }
-main{
 
+main{
+   max-width: 1920px;
+   margin: 0 auto;
 }
 
 .con{
@@ -45,6 +51,7 @@ main{
    position: fixed;
    z-index: 1000;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -57,9 +64,10 @@ header{
 }
 
 header .logo{
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     color: var(--primaryblue);
     font-weight: 600;
+    font-size: 2rem;
   
 }
 
@@ -105,11 +113,6 @@ header nav ul li a:hover::before{
   width: 100%; /* Expand the underline to full width on hover */
 }
 
-section{
-   max-width: 1920px;
-   margin: 0 auto;
-   position: relative;
-}
 
 nav{
     display: flex;
@@ -133,12 +136,12 @@ nav .btn:hover{
 .home{
 
    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4rem;
-    height: 100vh;
-    overflow: hidden;
-
+   justify-content: space-around;
+   align-items: center;
+   overflow: hidden;
+   height: 100vh;
+   padding:0 2rem;
+ 
     
  }
  .home .particles{
@@ -151,40 +154,31 @@ nav .btn:hover{
  }
  .home img{
   z-index: 2;
-
-width: 20%;
-flex: 1;
- 
+  margin-top: 5rem;
+   width: 20%;
+   flex: 1;
+   
  }
  .home .text{
-    z-index: 2; 
+    z-index: 1; 
     flex: 1.7;
+
+ 
+
  
  }
  .home .text h1{
     font-family: "Dancing Script", cursive;
     font-size: 3.5rem;
-    color:var(--primaryblue)
+    color:var(--primaryblue);
+    margin-bottom: 2rem;
+
  }
  .home .text p{
     color: var(--secondaryblue);
     font-size: 1.5rem;
+
  }
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
 
 .parallax1{
     display: flex;
@@ -225,10 +219,11 @@ flex: 1;
 }
 
 .about{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:2rem;
+display: flex;
+align-items:center ;
+justify-content: center;
+padding:2rem 5rem;
+
   
     
 }
@@ -246,13 +241,14 @@ flex: 1;
     padding:1rem;
     /* background-color: var(--primaryblue); */
     flex: 1;
+    
  }
  .about .right h1{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: rem;
  }
  .about .right p{
-    font-size: 1.2rem;
+    font-size: 1rem;
  }
  .about .left img{
     width: 98%;
@@ -361,10 +357,10 @@ flex: 1;
 
  .admission{
    background-color: var(--primaryblue);
-   padding: 2rem 5rem;
+   padding: 2rem 2rem;
    height: 100%;
-  
  }
+
  .admission  .content .left .excellence span{
    color: var(--primaryyellow);
    font-size: 1.3rem;
@@ -401,20 +397,20 @@ flex: 1;
  color:var(--primaryyellow)
 }
 
- .admission .title{
+ .admission .header{
    padding:2.5rem 5rem;
    text-align: center;
    color:white;
    font-size: 1.5rem;
  }
- .admission .title .fa-user-pen{
+ .admission .header .fa-user-pen{
    margin-top: 3rem;
    font-size: 4rem;
  }
- .admission .title span{
+ .admission .header span{
    color: var(--primaryyellow);
  }
- .admission .title p{
+ .admission .header p{
    font-size: 1.2rem;
    margin-top: 1rem;
  }
@@ -461,10 +457,11 @@ flex: 1;
 
  }
 
- .admission .development{
+ .admission .content .left .development{
    display: flex;
-   gap:1rem;
-
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 1rem;
  }
  .admission .development p{
    color:white;
@@ -477,10 +474,11 @@ flex: 1;
 
 
 
- .admission .faith{
+ .admission .content .left .faith{
    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
    gap: 1rem;
-   color: white;
   
    
   
@@ -556,17 +554,19 @@ flex: 1;
    transition: ease-in .1s;
 }
 
-
+.footer-container{
+   width: 100%;
+   background-color: gray;
+   padding:2rem 0;
+}
 footer{
    background-color: gray;
-   padding: 1rem 5rem;
+   max-width: 1920px;
+   margin: 0 auto;
    color:white;
-  
-
    display: flex;
    align-items: center;
    justify-content: space-around;
-
    font-size: 1.2rem;
  }
  footer p{
@@ -574,77 +574,240 @@ footer{
  }
 
 footer .connect{
+
    display: flex;
+   justify-content: flex-end;
    flex-direction: column;
    font-size: 1.2rem;
    flex: 2;
-   padding:2rem;
+   
+
 
 }
 footer .connect .loc{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start
+  justify-content: center;
 }
-footer .connect .loc p{
-   margin-bottom: 1.2rem;
-}
+
 footer .connect a{
    color:white;
    font-size: 1.5rem;
    margin-right: 1rem;
-   margin-top:1rem;
+   /* margin-top:1rem; */
 }
 
 
 
 
 
+@media(  max-width:1024px){
 
 
-@media(max-width:768px){
-  header nav{
-    display: block;
-    position:absolute;
-    background-color: rgba(245, 199, 26, .9);
-    top:0;
-    text-align: center;
-    padding:5rem;
-    left:0;
-    width: 100%;
-    transition: ease-in .2s;
-    height: 100vh;
 
-  }
-  header nav .slide-left{
-    display: block;
-    position: absolute;
-    top:1rem;
-    right: 5rem;
-    padding:0.5rem 0.7rem;
-    background-color: var(--btn-pri-background);
-    border: none;
-    border-radius:0.2rem;
-    color:white;
-    font-size: 1rem;
+   
+/* 
+   .home .text h1{
+      margin-top: 5rem;
+   }
+   .home{
+      padding: 0 1rem;
+   } */
+     
+   }
+
+@media(max-width:768px) {
+
+
+   /* HEADER layout lower than 768px */
+
+   header{
+      padding:1rem 1rem;
+     }
+     header nav{
+       display: block;
+       position:absolute;
+       background-color: rgba(245, 199, 26, .96);
+       top:0;
+       text-align: center;
+       padding:5rem;
+       left:0;
+       width: 100%;
+       transition: ease-in .2s;
+       height: 100vh;
+     }
+     header nav .slide-left{
+       display: block;
+       position: absolute;
+       top:1rem;
+       right: 1rem;
+       padding:0.5rem 0.7rem;
+       background-color: var(--btn-pri-background);
+       border: none;
+       border-radius:0.2rem;
+       color:white;
+       font-size: 1rem;
+   }
+     header nav ul{
+       flex-direction: column;
+       margin-bottom: 2rem;
+       gap:3.5rem;
+     }
+     header nav ul li{
+      font-size: 1.4rem;
+     }
+     header .menu-btn{
+       display: block;
+     }
+
+/* HOME */
+
+   .home{
+   display: flex;
+   flex-direction: column;
+   min-width: 100px;
+   text-align: center;
+
+  
+   }
+
+   .home .primary-btn{
+      z-index: 999;
+     
+   }
+
+   .home img{
+      margin-top: 80px;
+      width: 50%;
+   
+   }
+   .home .text h1{
+      font-size: 2.5rem;
+   }
+   .home .text p{
+      font-size: 1rem;
+    
+   }
+
+   .about{
+      flex-direction: column;
+      padding: 2rem 2rem;
+   }
+   .about .right{
+      padding:1rem 0rem;
+   }
+   .about .right h1{
+      margin-bottom: 1rem;
+   }
+   
+
+
+   .article1{
+ 
+     flex-direction: column-reverse; 
+     margin-top:2rem;
+   }
+   .article1 .left h1{
+      font-size: 2rem;
+   }
+   .article1 .left p{
+      font-size: 1rem;
+   }
+
+
+   .article2{
+      flex-direction: column;
+      margin-top:2rem;
+   }
+   .article2 .right p{
+      font-size: 1rem;
+   }
+   .article3{
+      flex-direction: column-reverse;
+      margin-top:2rem;
+      margin-bottom: 5rem;
+   }
+   
+   .article3 .right {
+      margin-top:10rem;
+   };
+
+   .article3 .left p{
+      margin-top: 3rem;
+      font-size: 1rems;
+     
+   }
+   .article3 .left h1{
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      
+   }
+   .admission .content .left .excellence,
+   .admission .content .left .development,
+   .admission .content .left .faith{
+      display: flex;
+     flex-direction: column;
+   }
+   .admission .content{
+      flex-direction: column;
+      text-align: center;
+   }
+   .admission .header{
+      padding:0 2rem;
+   }
+   .admission .header h1{
+      font-size: 2rem;
+   }
+   .admission .header h2{
+      font-size: 1.5rem;
+   }
+   .admission .header p{
+      font-size: 1rem;
+   }
+
 }
-  header nav ul{
-    flex-direction: column;
-    margin-bottom: 2rem;
-    gap:2rem;
-  }
-  header .menu-btn{
-    display: block;
-  }
+
+
+
+ 
+
+
+
+
+
+   /* .home .text{
+      margin-bottom: 10rem;
+   } */
+
+
+
+
+
+
+
+
+   /* .about .left img{
+      width: 100%;
+   }
+   .about {
+      padding: 1rem 2rem;
+   } */
+
+  /* 
+  */
+
+/* 
 
   .home .text h1{
    font-size: 2.5rem;
    transition: ease-in 0.2s;
   }
   .home .text p{
-   font-size: 0.9rem;
+   font-size: 1rem;
    
   }
+
   .about{
    flex-direction: column-reverse;
   }
@@ -704,24 +867,69 @@ footer .connect a{
    margin-bottom: 5rem;
 }
 
-}
+.admission .header{
+
+   padding: 1rem 1rem;
+
+ }
+  */
+
+
 
 @media(max-width:600px){
-   .home{
+
+   /* .home{
       flex-direction: column;
-      padding-bottom: 2rem;
+     
    }
    .home img{
-      width: 40%;
+      width: 100%;
       transition: ease-in .2s;
-      margin-top: 2rem;
-      margin-bottom: 0;
+      margin-top: 4rem;
+
    }
    .home .text{
       text-align: center;
-      padding:3rem;
+      padding:2rem;
+   
    }
-  
+   .home .text p{
+      font-size: 1rem;
+   }
+   .home .text h1{
+      margin-top: 0.5rem;
+   }
+   header .logo{
+      font-size: 1.2rem;
+   } */
+
+
+}
+
+@media(max-width:375px){
+ 
+  .home .text {
+ 
+   padding: rem;
+
+  }
+  .home{
+   flex-direction: column;
+ 
+   height: 100vh;
+  }
+  .home img{
+   width: 100%;
+   margin-top: 10rem;
+  }
+  .home .text h1{
+   margin-top:1rem;
+   
+  }
+  .home .text{
+   margin-bottom:20rem;
+
+  }
 }
 
 

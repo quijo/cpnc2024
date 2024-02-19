@@ -9,27 +9,27 @@
     <title>CPNC</title>
 </head>
 <body>
+<!-- start header section -->
+<div class="con">
+    <header>
+        <div class="logo">CPNC</div>
+        <nav id="menu-list"  class="menu-active">
+            <button class="slide-left" onclick="hide()"><i id="arrow-left"class="fa-solid fa-arrow-left" ></i></button>
+            <ul>
+                <li><a onclick="hide()"  href="#home"> home</a></li>
+                <li><a onclick="hide()" href="#about">about</a></li>
+                <li><a onclick="hide()" href="#admission">admission</a></li>
+                <li><a onclick="hide()" href="#contact">contact</a></li>
+            </ul>
+            <buton class="primary-btn" href="" onclick="hide()" >Login</buton>
+        </nav>
+      <button class="menu-btn" id="menu"><i id="bar" class="fa-solid fa-bars" style="font-size: 1rem;"></i></button>
+    </header>
+  </div> 
+<!-- end header section -->
 
 <main>
-<!-- start header section -->
-      <div class="con">
-        <header>
-            <div class="logo">CPNC</div>
-            <nav id="menu-list"  class="menu-active">
-                <button class="slide-left" onclick="hide()"><i id="arrow-left"class="fa-solid fa-arrow-left" ></i></button>
-                <ul>
-                    <li><a onclick="hide()"  href="#home"> home</a></li>
-                    <li><a onclick="hide()" href="#about">about</a></li>
-                    <li><a onclick="hide()" href="#admission">admission</a></li>
-                    <li><a onclick="hide()" href="#contact">contact</a></li>
-                </ul>
-                <buton class="primary-btn" onclick="hide()" >Login</buton>
-            </nav>
-          <button class="menu-btn" id="menu"><i id="bar" class="fa-solid fa-bars" style="font-size: 1rem;"></i></button>
-        </header>
-      </div> 
- <!-- end header section -->
-    
+
     
 <!--start home section -->    
 <section class="home" id="home">
@@ -40,8 +40,11 @@
         <p>Founded in 1964 in Iloilo City.</p>
         <p>Transferred to Cebu in Cebu City in 1986.</p>
         <p style="margin-bottom: 2rem;">Change of name from VNBC to CPNC in 2021.</p>
-         <a href="#" class="primary-btn" >READ MORE</a>
-    </div>      
+        <a href="#about" class="primary-btn" >READ MORE</a> 
+       
+    </div>     
+    
+   
 </section> 
 <!-- end  home section -->
 
@@ -58,7 +61,7 @@
             <h1>About us</h1>
             <p>Welcome to Central Philippine Nazarene College, a beacon of academic excellence deeply rooted in Christian values and principles. Our institution stands as a testament to the unwavering commitment to nurturing young minds, not only academically but also spiritually. At CPNC, we believe that education is a transformative journey, and we strive to foster an environment where students can grow intellectually, morally, and spiritually.</p>
         </div>
-    </section> 
+    </section>  
 <!-- End About Section -->
      
 
@@ -91,7 +94,7 @@
          <div class="right">
            <img src="images/article3.jpg" alt="">
          </div>
-    </section>
+    </section> 
 <!-- end Artice Section -->
 
 <!-- parallax -->
@@ -100,8 +103,8 @@
 
 
 <!-- admission -->
-  <section class="admission" id="admission">
-       <div class="title">
+<section class="admission" id="admission">
+       <div class="header">
         <h1>Central Philippine Nazarene College</h1>
         <h2>Your <span>Gateway to Excellence </span> in Education!</h2>
         <p>
@@ -110,9 +113,10 @@
         <i class="fa-solid fa-user-pen"></i>
        </div> 
        <div class="content">
-            <div class="left">
-        <h2><span>Why Choose </span>CPNC?</h2>
+        <div class="left">
+            <h2><span>Why Choose </span>CPNC?</h2>
                 <div class="excellence">
+               
                     <i class="fa-solid fa-landmark"></i>
                      <p><span>Academic Excellence:</span> Our curriculum is designed to challenge and inspire students, fostering critical thinking, creativity, and a passion for knowledge. With a team of dedicated and experienced educators, we are committed to providing a top-notch academic experience.</p>
                     
@@ -129,7 +133,7 @@
                         <span>Faith-Based Education:</span> At CPNC, we integrate Christian values into every aspect of our educational approach. Our commitment to faith-based education ensures that students not only excel academically but also develop a strong moral compass, empathy, and a sense of purpose.
                     </p>
                 </div>
-            </div>
+        </div>
             <div class="right">
                 <div class="online">
                     <h1>School <span>Admission</span> </h1>
@@ -159,11 +163,13 @@
                 <button class="apply-btn">Apply Now</button>
                 <button class="contact-btn">Contact Us</button>
             </div>
-       </div> 
+       </div>
+</section>
 <!-- end admission -->
  </main>
- 
+
 <!-- Footer Section -->
+<div class="footer-container">
     <footer  id="footer">
         <p>
             Central Philippine Nazarene College Inc. ©2023 | All Rights Reserved
@@ -178,6 +184,8 @@
             </a>
         </div>
       </footer>
+</div>
+    
  <!-- End Footer Section -->
 
     <script src="js/index.js"></script>
