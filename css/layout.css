@@ -13,9 +13,7 @@
    --btn-pri-color:white;
 
 }
-body{
-   background-color: white;
-}
+
 
 .primary-btn{
    background-color: var(--btn-pri-background);
@@ -43,6 +41,7 @@ body{
 main{
    max-width: 1920px;
    margin: 0 auto;
+ 
 }
 
 .con{
@@ -110,9 +109,8 @@ header nav ul li a::before{
 }
 header nav ul li a:hover::before{
   color:var(--secondaryblue);
-  width: 100%; /* Expand the underline to full width on hover */
+  width: 100%; 
 }
-
 
 nav{
     display: flex;
@@ -139,29 +137,39 @@ nav .btn:hover{
    justify-content: space-around;
    align-items: center;
    overflow: hidden;
-   height: 100vh;
-   padding:0 2rem;
- 
+  padding:5%;
+  margin: 0;
+   position: absolute;
     
  }
- .home .particles{
-    width: 100%;
+ .particles{
+ 
+    /* width: 100%;
    position: absolute;
-   background-color: var(--secondaryyellow);
-   height: 100vh;
   
+   display: flex;
+   align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 100vh;
+   position: relative;
+
+   margin: 0;
+   background-color: var(--secondaryyellow);
+
  
  }
  .home img{
-  z-index: 2;
-  margin-top: 5rem;
-   width: 20%;
-   flex: 1;
-   
+ 
+      width: 20%;
+      flex: 1;
  }
  .home .text{
     z-index: 1; 
     flex: 1.7;
+ 
+
 
  
 
@@ -169,14 +177,16 @@ nav .btn:hover{
  }
  .home .text h1{
     font-family: "Dancing Script", cursive;
-    font-size: 3.5rem;
+ 
     color:var(--primaryblue);
     margin-bottom: 2rem;
+    font-size: 4vw;
 
  }
  .home .text p{
     color: var(--secondaryblue);
-    font-size: 1.5rem;
+
+    font-size: 2vw;
 
  }
 
@@ -196,15 +206,13 @@ nav .btn:hover{
 }
 
 .parallax2{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between;
     height: 300px;
     padding:5rem 5rem;
     color:var(--secondaryblue);
     gap:1rem;
-
-    top:3.5rem;
-
+    top:3.5rem; */
     background-image: url('../images/parallax2.jpg');
 
     /* Set a specific height */
@@ -222,9 +230,9 @@ nav .btn:hover{
 display: flex;
 align-items:center ;
 justify-content: center;
-padding:2rem 5rem;
+/* top right bottom left */
+margin:5rem 2rem 0rem 2rem;
 
-  
     
 }
 
@@ -259,10 +267,8 @@ padding:2rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    height: 100vh;
+    padding: 2rem 2rem 5rem 2rem ;
     gap:1rem;
-   
     margin: 0 auto;
  }
  .article1 .left{
@@ -291,8 +297,8 @@ flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    padding: 0 2rem;
+
+    padding:0 2rem 5rem 2rem;
     gap:1rem;
  
  }
@@ -301,7 +307,7 @@ flex: 1;
  }
 
  .article2 .right h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
  }
  .article2 .right p{
@@ -324,8 +330,7 @@ flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    padding: 0 2rem;
+   padding:0 2rem 5rem 2rem;
     
  }
  .article3 .left, .right{
@@ -557,7 +562,7 @@ flex: 1;
 .footer-container{
    width: 100%;
    background-color: gray;
-   padding:2rem 0;
+   padding:2rem 2rem;
 }
 footer{
    background-color: gray;
@@ -600,28 +605,23 @@ footer .connect a{
 
 
 
-
+/* 
 @media(  max-width:1024px){
 
 
 
-   
-/* 
-   .home .text h1{
-      margin-top: 5rem;
-   }
-   .home{
-      padding: 0 1rem;
-   } */
-     
-   }
 
+   } */
+
+
+
+   /* responsive */
 @media(max-width:768px) {
 
 
    /* HEADER layout lower than 768px */
 
-   header{
+    header{
       padding:1rem 1rem;
      }
      header nav{
@@ -660,39 +660,33 @@ footer .connect a{
        display: block;
      }
 
+   
+
 /* HOME */
 
-   .home{
-   display: flex;
+    .particles .home{
+    display: flex;
    flex-direction: column;
-   min-width: 100px;
-   text-align: center;
 
+   text-align: center;
+   height:100vh; 
+   padding-top:100px;
+   padding-bottom:100px;
   
    }
 
-   .home .primary-btn{
-      z-index: 999;
-     
-   }
 
    .home img{
-      margin-top: 80px;
+  
       width: 50%;
    
    }
-   .home .text h1{
-      font-size: 2.5rem;
-   }
-   .home .text p{
-      font-size: 1rem;
-    
-   }
+
 
    .about{
       flex-direction: column;
-      padding: 2rem 2rem;
-   }
+    
+   } */
    .about .right{
       padding:1rem 0rem;
    }
@@ -703,9 +697,9 @@ footer .connect a{
 
 
    .article1{
- 
+
      flex-direction: column-reverse; 
-     margin-top:2rem;
+     margin-top:2rem; 
    }
    .article1 .left h1{
       font-size: 2rem;
@@ -724,30 +718,24 @@ footer .connect a{
    }
    .article3{
       flex-direction: column-reverse;
-      margin-top:2rem;
-      margin-bottom: 5rem;
+       /* margin-top:2rem; 
+      margin-bottom: 5rem;  */
+      margin: 0 0 5rem 0;
    }
    
-   .article3 .right {
-      margin-top:10rem;
-   };
 
-   .article3 .left p{
-      margin-top: 3rem;
-      font-size: 1rems;
-     
-   }
+ 
    .article3 .left h1{
       font-size: 2rem;
       margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1rem; 
       
    }
    .admission .content .left .excellence,
    .admission .content .left .development,
    .admission .content .left .faith{
       display: flex;
-     flex-direction: column;
+     flex-direction: column; 
    }
    .admission .content{
       flex-direction: column;
@@ -762,175 +750,21 @@ footer .connect a{
    .admission .header h2{
       font-size: 1.5rem;
    }
-   .admission .header p{
-      font-size: 1rem;
+
+ 
+   footer p{
+      font-size: 3vw;
+      margin-right: 10px;
+   }
+   .connect p{
+      font-size: 3vw;
+      margin-top: 1rem;
    }
 
 }
 
 
 
- 
-
-
-
-
-
-   /* .home .text{
-      margin-bottom: 10rem;
-   } */
-
-
-
-
-
-
-
-
-   /* .about .left img{
-      width: 100%;
-   }
-   .about {
-      padding: 1rem 2rem;
-   } */
-
-  /* 
-  */
-
-/* 
-
-  .home .text h1{
-   font-size: 2.5rem;
-   transition: ease-in 0.2s;
-  }
-  .home .text p{
-   font-size: 1rem;
-   
-  }
-
-  .about{
-   flex-direction: column-reverse;
-  }
-  .about .left{
-   width: 100%;
-   padding:0.5rem;
-   border:solid 0.5rem var(--primaryyellow);
-   margin-bottom: 5rem;
-  }
-
-  .about .right{
-   padding: 0;
-   margin-bottom: 1rem;
-
-  }
-  .article1, .article2, .article3{
-   max-width: 1920px;
-  }
- 
-  .article1{
-   flex-direction: column;
-  
-  }
- 
-  .article1 .right{
-   width: 100%;
-   padding:0.5rem;
-   border:solid 0.5rem var(--primaryyellow);
- 
-  }
-  
-
-  .article2{
-   flex-direction: column-reverse;
-   margin-top: 15rem;
-  }
-  .article2 .left{
-   
-   width: 100%;
-   padding:0.5rem;
-   border:solid 0.5rem var(--primaryyellow);
-   margin-bottom: 5rem;
- 
-  }
-
-  .article3{
-   flex-direction: column;
-   margin-bottom: 5rem;
-  }
-.article3 .left{
-   margin-bottom: 1rem;
-}
-.article3 .right{
-   width: 100%;
-   padding:0.5rem;
-   border:solid 0.5rem var(--primaryyellow);
-   margin-bottom: 5rem;
-}
-
-.admission .header{
-
-   padding: 1rem 1rem;
-
- }
-  */
-
-
-
-@media(max-width:600px){
-
-   /* .home{
-      flex-direction: column;
-     
-   }
-   .home img{
-      width: 100%;
-      transition: ease-in .2s;
-      margin-top: 4rem;
-
-   }
-   .home .text{
-      text-align: center;
-      padding:2rem;
-   
-   }
-   .home .text p{
-      font-size: 1rem;
-   }
-   .home .text h1{
-      margin-top: 0.5rem;
-   }
-   header .logo{
-      font-size: 1.2rem;
-   } */
-
-
-}
-
-@media(max-width:375px){
- 
-  .home .text {
- 
-   padding: rem;
-
-  }
-  .home{
-   flex-direction: column;
- 
-   height: 100vh;
-  }
-  .home img{
-   width: 100%;
-   margin-top: 10rem;
-  }
-  .home .text h1{
-   margin-top:1rem;
-   
-  }
-  .home .text{
-   margin-bottom:20rem;
-
-  }
-}
 
 
 
