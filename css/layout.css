@@ -137,9 +137,12 @@ nav .btn:hover{
    justify-content: space-around;
    align-items: center;
    overflow: hidden;
-  padding:5%;
-  margin: 0;
+   
+ 
    position: absolute;
+   /* border: solid 1px red; */
+   height:400px;
+   width: 90%;
     
  }
  .particles{
@@ -155,8 +158,8 @@ nav .btn:hover{
    height: 100vh;
    position: relative;
 
-   margin: 0;
    background-color: var(--secondaryyellow);
+
 
  
  }
