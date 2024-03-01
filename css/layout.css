@@ -167,6 +167,7 @@ nav .btn:hover{
  
       width: 20%;
       flex: 1;
+      object-fit: contain;
  }
  .home .text{
     z-index: 1; 
@@ -188,7 +189,6 @@ nav .btn:hover{
  }
  .home .text p{
     color: var(--secondaryblue);
-
     font-size: 2vw;
 
  }
