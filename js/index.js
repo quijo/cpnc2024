@@ -14,5 +14,7 @@ menu.addEventListener('click',function(){
 function hide(){
     toggleMenu.classList.toggle('menu-active')
     arrow.classList.toggle('active')
+
+    window.location='https://vnbc-essentiel.ckgroup.ph';
 }
 
