@@ -15,6 +15,11 @@ function hide(){
     toggleMenu.classList.toggle('menu-active')
     arrow.classList.toggle('active')
 
+   
+}
+
+function redirect(){
     window.location='https://vnbc-essentiel.ckgroup.ph';
+
 }
 
