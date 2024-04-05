@@ -13,8 +13,8 @@
 </head>
 <body>
 <!-- start header section -->
-<div class="con">
-    <header>
+<div class="con" >
+    <header >
         <div class="logo">CPNC</div>
         <nav id="menu-list"  class="menu-active">
             <button class="slide-left" onclick="hide() "><i id="arrow-left"class="fa-solid fa-arrow-left" ></i></button>
