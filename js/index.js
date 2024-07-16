@@ -19,7 +19,7 @@ function hide(){
 }
 
 function redirect(){
-    window.location='https://vnbc-essentiel.ckgroup.ph';
+    window.location='https://cpnc.globalnaz.com';
 
 }
 
