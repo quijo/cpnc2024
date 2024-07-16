@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- <link rel="icon" href="favicon-64.png" sizes="64x64" type="image/png"> -->
-    <title>CPNC</title>
-
-
-</head>
-<body>
+<?php
+include 'template/header.php';
+?>
 <!-- start header section -->
 <div class="con">
     <header>
@@ -26,7 +15,7 @@
                 <!-- <li><a onclick="hide()" href="www.cpnc.globalnaz.com/" target="_blank">GNECsis</a></li> -->
                 
             </ul>
-            <buton class="primary-btn" style="cursor: pointer;" onclick="hide(); redirect()" >GNECsis</buton>
+            <buton class="primary-btn" style="cursor: pointer;" onclick="hide(); redirect() ">GNECsis</buton>
         </nav>
       <button class="menu-btn" id="menu"><i id="bar" class="fa-solid fa-bars" style="font-size: 1rem;"></i></button>
     </header>
@@ -197,41 +186,8 @@
         </div>
       </footer>
 </div>
-    
- <!-- End Footer Section -->
- <!-- <div class="fb-customerchat"
- page_id="1070947976251030"
- minimized="true">
-</div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '302319795863750',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.11'
-    });
-  };
-(function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script> -->
-
-<!-- Your customer chat code -->
-<!-- <div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="1070947976251030"
-  theme_color="#BE59B9">
-</div> -->
+<?php
+include 'template/footer.php'
+?>
 
 
-
-    <script src="js/index.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-</body>
-</html>

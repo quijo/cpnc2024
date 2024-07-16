@@ -20,6 +20,8 @@ function hide(){
 
 function redirect(){
     window.location='https://cpnc.globalnaz.com';
+    window.open();
+   
 
 }
 
